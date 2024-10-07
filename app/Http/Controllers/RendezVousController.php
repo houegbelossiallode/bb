@@ -151,7 +151,7 @@ class RendezVousController extends Controller
 
 
    public function delete(Rd $rd ){
-
+    //hhhdhj
      $rd->delete();
     return redirect()->route("rds.index")->with("success","Rendez-vous supprimé avec succès");
 
