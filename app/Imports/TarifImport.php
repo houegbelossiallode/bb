@@ -25,7 +25,7 @@ class TarifImport implements ToModel, WithHeadingRow
         return new Tarif([
             'compagnie_id'    => $this->compagnie_id,
             'conditiongroupe_id'  => $row['id_groupe'] ? $row['id_groupe'] : null,
-            'tarif'         => $row['tarif'] ? $row['tarif'] : null,
+            'tarif'         => $row['tarif'] ? $row['tarif'] : 0,
             'reduction'             => $row['reduction'] ? $row['reduction'] : 0,
         ]);
     }
