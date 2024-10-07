@@ -55,7 +55,7 @@ class Produit extends Model
 
     public function delete()
     {
-        $this->productions()->delete();
+        
         $this->garanties()->delete();
         $this->offres()->delete();
         $this->infos()->delete();

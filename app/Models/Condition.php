@@ -36,7 +36,7 @@ class Condition extends Model
     public function delete()
     {
         $this->valeurs()->delete();
-        $this->liaisons()->delete();
+        
         $this->inferieures()->delete();
 
         parent::delete();
