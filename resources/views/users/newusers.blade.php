@@ -130,6 +130,15 @@
                                 @enderror
                             </div>
 
+                              <div class="input-field col s12 l6">
+                                <input id="code" name="code" type="text"
+                                    class="validate @error('code') is-invalid @enderror" value="{{ old('code') }}">
+                                <label for="code">Code Commercial</label>
+                                @error('code')
+                                    <span id="posteHelp" class="form-text red-text">{{ $message }}</span>
+                                @enderror
+                            </div>
+
                         </div>
                         <div id="blocRole"
                             style="display: {{ $errors->has('compagnie') || $errors->has('poste') ? 'block' : 'none' }}">

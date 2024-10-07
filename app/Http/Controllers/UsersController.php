@@ -47,6 +47,7 @@ class UsersController extends Controller
         if ($request->input('role') === 'Commercial') {
             $rules['niveau'] = 'required';
             $rules['agence'] = 'required';
+            $rules['code'] = 'required|string|unique:commercials,code';
         }
 
         if ($request->input('role') === 'Personnel') {
@@ -63,6 +64,8 @@ class UsersController extends Controller
         }
 
         $messages = [
+            'code.required' => 'Le code commercial doit être renseigné',
+            'code.unique' => 'Ce code est déjà utilisé.',
             'sexe.required' => 'Veuillez choisir votre civilité(e).',
             'nom.required' => 'Veuillez entrer votre nom.',
             'prenom.required' => 'Veuillez entrer votre prénom.',
@@ -118,6 +121,7 @@ class UsersController extends Controller
                 'agence_id' => $agence_id,
                 'user_id' => $user->id,
                 'statut_id' => $request->niveau,
+                'code' => $request->code,
             ]);
         }
 
