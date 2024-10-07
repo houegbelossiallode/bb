@@ -327,4 +327,24 @@ class ReseauController extends Controller
 
         return view('reseau.realisation.listerealisation', ['realisations' => $realisations, 'id' => $id]);
     }
+
+  
+      //Toutes les réalisations
+
+       public function realisation()
+    {
+        //$objectif = Objectif::find($id);
+        $realisations = Realisation::all();
+        //dd($realisations->count());
+       // if ($realisations->count() <= 0) {
+       //     return redirect()->route('realisation.new', $id);
+       // }
+
+        return view('reseau.realisation.realisation', ['realisations' => $realisations]);
+    }
+
+    
+
+
+    
 }

@@ -53,8 +53,11 @@
 
                                 @if (Auth::user()->role == 'Courtier')
                                 <li><a href="{{ route('objectif.liste') }}"><i class="material-icons">adjust</i><span
-                                            class="hide-menu">Mes
+                                            class="hide-menu">Les
                                             objectifs</span></a></li>
+                                 <li><a href="{{ route('realisation') }}"><i class="material-icons">adjust</i><span
+                                     class="hide-menu">Les
+                                 Réalisations</span></a></li>
                                 @endif
                                 {{-- <li><a href="{{ route('compagnie.liste') }}"><i class="material-icons">adjust</i><span
                                             class="hide-menu">Compagnie</span></a></li> --}}

@@ -74,7 +74,7 @@ Route::get('/', function () {
 
     //Route realisation
     Route::get('export-objectif/{id}', [ReseauController::class, 'exportExcel'])->name('table.realisation');
-
+    Route::get('/reseau/realisation/liste', [ReseauController::class, "realisation"])->name('realisation');
     Route::get('/reseau/realisation/new/{id}', [ReseauController::class, "newrealisation"])->name('realisation.new');
     Route::post('/reseau/realisation/add/{id}', [ReseauController::class, "addrealisation"])->name('realisation.add');
     Route::get('/reseau/realisation/edit/{idrealisation}/{idobjectif}', [ReseauController::class, "editrealisation"])->name('realisation.edit');
