@@ -118,6 +118,14 @@
                                     <span id="agenceHelp" class="form-text red-text">{{ $message }}</span>
                                 @enderror
                             </div>
+                            <div class="input-field col s12 l6">
+                                <input id="code" name="code" type="text"
+                                    class="validate @error('code') is-invalid @enderror" value="{{ old('code') ?? $user->code }}">
+                                <label for="code">Code Commercial</label>
+                                @error('code')
+                                    <span id="posteHelp" class="form-text red-text">{{ $message }}</span>
+                                @enderror
+                            </div>
                         @endif
                         @if ($role == 'Personnel')
                             <div class="input-field col s12 l6">

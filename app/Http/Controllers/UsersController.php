@@ -232,6 +232,7 @@ class UsersController extends Controller
         if ($role === 'Commercial') {
             $rules['niveau'] = 'required';
             $rules['agence'] = 'required';
+            $rules['code'] = 'required|string|unique:commercials,code';
         }
 
         if ($role === 'Personnel') {
@@ -248,6 +249,8 @@ class UsersController extends Controller
         }
 
         $messages = [
+            'code.required' => 'Le code commercial doit être renseigné',
+            'code.unique' => 'Ce code est déjà utilisé.',
             'nom.required' => 'Veuillez entrer votre nom.',
             'prenom.required' => 'Veuillez entrer votre prénom.',
             'date.required' => 'Veuillez renseigner votre date de naissance.',
