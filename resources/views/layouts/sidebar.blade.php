@@ -100,7 +100,9 @@
                     <div class="collapsible-body">
                         <ul>
                             <li><a href="{{ route('production.liste') }}"><i class="material-icons">adjust</i><span
-                                        class="hide-menu">Listes des productions</span></a></li>
+                                        class="hide-menu">Listes des prévoyances</span></a></li>
+                            <li><a href="#"><i class="material-icons">adjust</i><span
+                                        class="hide-menu">Listes des contrats</span></a></li>
                         </ul>
                     </div>
                 </li>
