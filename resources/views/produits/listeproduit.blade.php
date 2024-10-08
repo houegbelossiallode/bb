@@ -166,14 +166,14 @@
                                                         <li tabindex="{{ $produit->id }}">
                                                             <a href="{{ route('renseignement.grille', $produit->id) }}"
                                                                 class=""><i class="ti-pencil"
-                                                                    aria-hidden="true"></i>Exporter la grille de
-                                                                renseignement</a>
+                                                                    aria-hidden="true"></i>Exporter la grille info garantie
+                                                                </a>
                                                         </li>
                                                         <li tabindex="{{ $produit->id }}">
                                                             <a href="{{ route('renseignement.liste', $produit->id) }}"
                                                                 class=""><i class="ti-pencil"
-                                                                    aria-hidden="true"></i>Voir la grille de
-                                                                renseignement</a>
+                                                                    aria-hidden="true"></i>Voir la grille info garantie
+                                                                </a>
                                                         </li>
                                                         <li tabindex="{{ $produit->id }}">
                                                             <a href="{{ route('production.new', $produit->id) }}"
