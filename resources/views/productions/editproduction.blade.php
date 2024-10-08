@@ -72,6 +72,16 @@
 
 
                     </div>
+
+
+                    <div class="p-10 bg-success">
+                        <h5 class="m-b-0 white-text" style="text-align: center">
+                           Informations Complémentaires
+                        </h5>
+  
+                    </div>
+
+
                     <div class="row">
                         @foreach ($informations as $index => $information)
                             <input type="hidden" name="repeater-group[{{ $index }}][nom]"
