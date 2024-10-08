@@ -91,6 +91,22 @@
                     </div>
                 </li>
 
+
+
+                <li class="small-cap"><span class="hide-menu">Productions</span></li>
+                <li>
+                    <a href="javascript: void(0);" class="collapsible-header has-arrow"><i
+                            class="material-icons">art_track</i><span class="hide-menu"> Productions</span></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="{{ route('production.liste') }}"><i class="material-icons">adjust</i><span
+                                        class="hide-menu">Listes des productions</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+
+
+
                 <li class="small-cap"><span class="hide-menu">Offres</span></li>
                 <li>
                     <a href="javascript: void(0);" class="collapsible-header has-arrow"><i

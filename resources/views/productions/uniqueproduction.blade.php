@@ -22,24 +22,23 @@
                             <h5 class="m-b-0 white-text" style="text-align: center">
                                 {{ 'PRODUCTION : ' . $production->reference . ' ( ' . $production->conditiongroupe->produit->nomProduit . ' )' }}
                             </h5>
-                            <a class="dropdown-trigger btn white black-text" data-target="dropdown{{ $production->id }}"
+
+                   
+                         <!--    <a class="dropdown-trigger btn white black-text" data-target="dropdown{{ $production->id }}"
                                 style="font-size:0.8em;">Action
                                 <span class="fas fa-angle-down">
                                 </span></a>
                             <ul id="dropdown{{ $production->id }}" class="dropdown-content" tabindex="{{ $production->id }}"
                                 style="min-width: 300px;">
 
-                                <li tabindex="{{ $production->id }}">
-                                    <a href="{{ route('production.edit', $production->id) }}" class=""><i
-                                            class="ti-pencil" aria-hidden="true"></i>Modifier les
-                                        informations sur la production</a>
-                                </li>
+                               
                                 <li tabindex="{{ $production->id }}">
                                     <a href="{{ route('production.delete', $production->id) }}" class=""><i
                                             class="ti-close" aria-hidden="true"></i>Supprimer toute
                                         la production </a>
                                 </li>
                             </ul>
+                        -->     
                         </div>
                         <div class="card-content">
                             <div class="container m-t-40">
