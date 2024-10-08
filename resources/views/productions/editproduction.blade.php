@@ -80,7 +80,7 @@
                                 value="{{ $information['type'] }}">
 
                             @if ($information['type'] == 'textarea')
-                                <div class="input-field col s12">
+                            <div class="input-field col s6">
                                     <textarea id="champ{{ $index }}" name="repeater-group[{{ $index }}][information]"
                                         class="materialize-textarea validate @error('repeater-group.' . $index . '.information') is-invalid @enderror">{{ old('repeater-group.' . $index . '.information') ?? $information['information'] }}</textarea>
                                     <label for="champ{{ $index }}">{{ $information['nom'] }}</label>
@@ -90,7 +90,7 @@
                                     @enderror
                                 </div>
                             @elseif ($information['type'] == 'file')
-                                <div class="file-field input-field col s12">
+                                <div class="file-field input-field col s6">
                                     <div class="btn darken-1">
                                         <span>{{ $information['nom'] }}</span>
                                         <input type="file" name="repeater-group[{{ $index }}][fichier]">
@@ -112,7 +112,7 @@
                                 @endphp
                                 <input type="hidden" name="repeater-group[{{ $index }}][options]"
                                     value='{{ $information['options'] }}'>
-                                <div class="input-field col s12">
+                                    <div class="input-field col s6">
                                     <select id="champ{{ $index }}"
                                         name="repeater-group[{{ $index }}][information]" data-error=".errorTxt6"
                                         class="validate @error('repeater-group.' . $index . '.information') is-invalid @enderror">
@@ -140,7 +140,7 @@
                                     $information['type'] === 'Cv' ||
                                     $information['type'] === 'm2' ||
                                     $information['type'] === '%')
-                                <div class="input-field col s12">
+                                <div class="input-field col s6">
                                     <input id="champ{{ $index }}"
                                         name="repeater-group[{{ $index }}][information]" type="number"
                                         class="validate @error('repeater-group.' . $index . '.information') is-invalid @enderror"
@@ -152,7 +152,7 @@
                                     @enderror
                                 </div>
                             @else
-                                <div class="input-field col s12">
+                            <div class="input-field col s6">
                                     <input id="champ{{ $index }}"
                                         name="repeater-group[{{ $index }}][information]"
                                         type="{{ $information['type'] }}"

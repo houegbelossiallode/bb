@@ -65,7 +65,7 @@
                                                 <li tabindex="{{ $production->id }}">
                                                     <a href="{{ route('production.delete', $production->id) }}"
                                                         class=""><i class="ti-close" aria-hidden="true"></i>Supprimer
-                                                        l'production</a>
+                                                        la production</a>
                                                 </li>
                                                 <li tabindex="{{ $production->id }}">
                                                     <a href="{{ route('production.edit', $production->id) }}" class=""><i
