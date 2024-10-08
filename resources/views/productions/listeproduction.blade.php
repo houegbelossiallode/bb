@@ -31,6 +31,7 @@
                                     <th>Référence</th>
                                     <th>Client</th>
                                     <th>Compagnie</th>
+                                    <th>Prime</th>
                                     <th>Statut</th>
                                     <th>Action</th>
                                 </tr>
@@ -42,6 +43,7 @@
                                         <td>{{ $production->client->user->nom . ' ' . $production->client->user->prenom }}
                                         </td>
                                         <td>{{ $production->compagnie->nom }}</td>
+                                        <td>{{ number_format($production->prime, 2) }}</td>
                                         <td>{{ $production->statut }}</td>
                                         <td>
                                             <a class="dropdown-trigger btn lighten-2"
@@ -64,6 +66,11 @@
                                                     <a href="{{ route('production.delete', $production->id) }}"
                                                         class=""><i class="ti-close" aria-hidden="true"></i>Supprimer
                                                         l'production</a>
+                                                </li>
+                                                <li tabindex="{{ $production->id }}">
+                                                    <a href="{{ route('production.edit', $production->id) }}" class=""><i
+                                                            class="ti-pencil" aria-hidden="true"></i>Modifier les
+                                                        informations sur la production</a>
                                                 </li>
                                             </ul>
                                         </td>
